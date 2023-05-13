@@ -1,27 +1,23 @@
-# Escape Sequences
+# Escape Sequences and Text Formatting
 
 In programming and text formatting, escape sequences are special character combinations used to represent actions or formatting options. They are commonly used to add colors, formatting, and other visual effects to text in console or terminal outputs.
 
-# Escape Sequences and Formatting
-
 Escape sequences are represented by a backslash followed by specific characters. These sequences modify the appearance of the text when used in combination with a compatible terminal or console.
 
-## Formatting Options, Text Colors, and Background Colors
+## Escape Sequences, Formatting, and Colors
 
-| Formatting | Escape Sequence | Color   | Text Color (Dark) | Text Color (Bright) | Background Color (Dark) | Background Color (Bright) |
-| ---------- | --------------- | ------- | ----------------- | ------------------- | ----------------------- | ------------------------- |
-| Bold       | \033[1m         | Black   | \033[30m          | \033[90m            | \033[40m                | \033[100m                 |
-| Dim        | \033[2m         | Red     | \033[31m          | \033[91m            | \033[41m                | \033[101m                 |
-| Underline  | \033[4m         | Green   | \033[32m          | \033[92m            | \033[42m                | \033[102m                 |
-| Blink      | \033[5m         | Yellow  | \033[33m          | \033[93m            | \033[43m                | \033[103m                 |
-| Reverse    | \033[7m         | Blue    | \033[34m          | \033[94m            | \033[44m                | \033[104m                 |
-| Hidden     | \033[8m         | Magenta | \033[35m          | \033[95m            | \033[45m                | \033[105m                 |
-|            |                 | Cyan    | \033[36m          | \033[96m            | \033[46m                | \033[106m                 |
-|            |                 | White   | \033[37m          | \033[97m            | \033[47m                | \033[107m                 |
+| Formatting Option | Escape Sequence | Color (Dark) | Color (Bright) | Background Color (Dark) | Background Color (Bright) |
+| ----------------- | --------------- | ------------ | -------------- | ----------------------- | ------------------------- |
+| Bold              | \033[1m         | Black        | \033[90m       | \033[40m                | \033[100m                 |
+| Dim               | \033[2m         | Red          | \033[91m       | \033[41m                | \033[101m                 |
+| Underline         | \033[4m         | Green        | \033[92m       | \033[42m                | \033[102m                 |
+| Blink             | \033[5m         | Yellow       | \033[93m       | \033[43m                | \033[103m                 |
+| Reverse           | \033[7m         | Blue         | \033[94m       | \033[44m                | \033[104m                 |
+| Hidden            | \033[8m         | Magenta      | \033[95m       | \033[45m                | \033[105m                 |
+|                   |                 | Cyan         | \033[96m       | \033[46m                | \033[106m                 |
+|                   |                 | White        | \033[97m       | \033[47m                | \033[107m                 |
 
 Please note that the actual appearance of these colors may vary depending on the terminal or console being used.
-
-Feel free to explore and experiment with different combinations of escape sequences to create visually appealing and formatted text output.
 
 ## Using Escape Sequences in Programming Languages
 
