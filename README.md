@@ -6,16 +6,17 @@ Escape sequences are represented by a backslash followed by specific characters.
 
 ## Escape Sequences, Formatting, and Colors
 
-| Formatting Option | Escape Sequence | Color (Dark) | Color (Bright) | Background Color (Dark) | Background Color (Bright) |
-| ----------------- | --------------- | ------------ | -------------- | ----------------------- | ------------------------- |
-| Bold              | \033[1m         | Black        | \033[90m       | \033[40m                | \033[100m                 |
-| Dim               | \033[2m         | Red          | \033[91m       | \033[41m                | \033[101m                 |
-| Underline         | \033[4m         | Green        | \033[92m       | \033[42m                | \033[102m                 |
-| Blink             | \033[5m         | Yellow       | \033[93m       | \033[43m                | \033[103m                 |
-| Reverse           | \033[7m         | Blue         | \033[94m       | \033[44m                | \033[104m                 |
-| Hidden            | \033[8m         | Magenta      | \033[95m       | \033[45m                | \033[105m                 |
-|                   |                 | Cyan         | \033[96m       | \033[46m                | \033[106m                 |
-|                   |                 | White        | \033[97m       | \033[47m                | \033[107m                 |
+| **Formatting Option** | Escape Sequence | **Color** | Text Color (Dark) | Text Color (Bright) |
+| :-------------------: | :-------------: | :-------: | :---------------: | :-----------------: |
+|         Bold          |     \033[1m     |   Black   |     \033[30m      |      \033[90m       |
+|          Dim          |     \033[2m     |    Red    |     \033[31m      |      \033[91m       |
+|       Underline       |     \033[4m     |   Green   |     \033[32m      |      \033[92m       |
+|         Blink         |     \033[5m     |  Yellow   |     \033[33m      |      \033[93m       |
+|        Reverse        |     \033[7m     |   Blue    |     \033[34m      |      \033[94m       |
+|        Hidden         |     \033[8m     |  Magenta  |     \033[35m      |      \033[95m       |
+|                       |                 |   Cyan    |     \033[36m      |      \033[96m       |
+|                       |                 |   White   |     \033[37m      |      \033[97m       |
+|          ---          |       ---       |    ---    |        ---        |         ---         |
 
 Please note that the actual appearance of these colors may vary depending on the terminal or console being used.
 
