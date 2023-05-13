@@ -4,7 +4,7 @@ In programming and text formatting, escape sequences are special character combi
 
 Escape sequences are represented by a backslash followed by specific characters. These sequences modify the appearance of the text when used in combination with a compatible terminal or console.
 
-## Formatting and Colors
+## Colors and Formatting
 
 | **Formatting Option** | Escape Sequence | **Color** | Text Color (Dark) | Text Color (Bright) |
 | :-------------------: | :-------------: | :-------: | :---------------: | :-----------------: |
@@ -16,7 +16,6 @@ Escape sequences are represented by a backslash followed by specific characters.
 |        Hidden         |     \033[8m     |  Magenta  |     \033[35m      |      \033[95m       |
 |                       |                 |   Cyan    |     \033[36m      |      \033[96m       |
 |                       |                 |   White   |     \033[37m      |      \033[97m       |
-|          ---          |       ---       |    ---    |        ---        |         ---         |
 
 ## Using Escape Sequences in Programming Languages
 
