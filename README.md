@@ -8,49 +8,16 @@ Escape sequences are represented by a backslash followed by specific characters.
 
 Colors can be added to text using escape sequences that specify the desired color. Here are the commonly used escape sequences for colors:
 
-| Text Color (Dark) | Escape Sequence |
-| ----------------- | --------------- |
-| Black             | \033[30m        |
-| Red               | \033[31m        |
-| Green             | \033[32m        |
-| Yellow            | \033[33m        |
-| Blue              | \033[34m        |
-| Magenta           | \033[35m        |
-| Cyan              | \033[36m        |
-| White             | \033[37m        |
-
-| Text Color (Bright) | Escape Sequence |
-| ------------------- | --------------- |
-| Bright Black        | \033[90m        |
-| Bright Red          | \033[91m        |
-| Bright Green        | \033[92m        |
-| Bright Yellow       | \033[93m        |
-| Bright Blue         | \033[94m        |
-| Bright Magenta      | \033[95m        |
-| Bright Cyan         | \033[96m        |
-| Bright White        | \033[97m        |
-
-| Background Color (Dark) | Escape Sequence |
-| ----------------------- | --------------- |
-| Black                   | \033[40m        |
-| Red                     | \033[41m        |
-| Green                   | \033[42m        |
-| Yellow                  | \033[43m        |
-| Blue                    | \033[44m        |
-| Magenta                 | \033[45m        |
-| Cyan                    | \033[46m        |
-| White                   | \033[47m        |
-
-| Background Color (Bright) | Escape Sequence |
-| ------------------------- | --------------- |
-| Bright Black              | \033[100m       |
-| Bright Red                | \033[101m       |
-| Bright Green              | \033[102m       |
-| Bright Yellow             | \033[103m       |
-| Bright Blue               | \033[104m       |
-| Bright Magenta            | \033[105m       |
-| Bright Cyan               | \033[106m       |
-| Bright White              | \033[107m       |
+| Color   | Text Color (Dark) | Text Color (Bright) | Background Color (Dark) | Background Color (Bright) |
+| ------- | ----------------- | ------------------- | ----------------------- | ------------------------- |
+| Black   | \033[30m          | \033[90m            | \033[40m                | \033[100m                 |
+| Red     | \033[31m          | \033[91m            | \033[41m                | \033[101m                 |
+| Green   | \033[32m          | \033[92m            | \033[42m                | \033[102m                 |
+| Yellow  | \033[33m          | \033[93m            | \033[43m                | \033[103m                 |
+| Blue    | \033[34m          | \033[94m            | \033[44m                | \033[104m                 |
+| Magenta | \033[35m          | \033[95m            | \033[45m                | \033[105m                 |
+| Cyan    | \033[36m          | \033[96m            | \033[46m                | \033[106m                 |
+| White   | \033[37m          | \033[97m            | \033[47m                | \033[107m                 |
 
 Please note that the actual appearance of these colors may vary depending on the terminal or console being used.
 
