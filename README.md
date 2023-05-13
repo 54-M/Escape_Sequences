@@ -1,10 +1,10 @@
-# Escape Sequences and Text Formatting
+# ANSI Escape Sequences
 
 In programming and text formatting, escape sequences are special character combinations used to represent actions or formatting options. They are commonly used to add colors, formatting, and other visual effects to text in console or terminal outputs.
 
 Escape sequences are represented by a backslash followed by specific characters. These sequences modify the appearance of the text when used in combination with a compatible terminal or console.
 
-## Escape Sequences, Formatting, and Colors
+## Formatting and Colors
 
 | **Formatting Option** | Escape Sequence | **Color** | Text Color (Dark) | Text Color (Bright) |
 | :-------------------: | :-------------: | :-------: | :---------------: | :-----------------: |
@@ -17,8 +17,6 @@ Escape sequences are represented by a backslash followed by specific characters.
 |                       |                 |   Cyan    |     \033[36m      |      \033[96m       |
 |                       |                 |   White   |     \033[37m      |      \033[97m       |
 |          ---          |       ---       |    ---    |        ---        |         ---         |
-
-Please note that the actual appearance of these colors may vary depending on the terminal or console being used.
 
 ## Using Escape Sequences in Programming Languages
 
@@ -83,24 +81,26 @@ func main() {
 }
 ```
 
-Please note that the exact escape sequences for colors may vary depending on the platform and terminal being used. It's recommended to consult the documentation or resources specific to your terminal to find the appropriate escape sequences.
-
-## Compatibility and Limitations
-
-It's important to note that escape sequences for colors may not be supported in all terminals or consoles. Compatibility can vary depending on the platform and terminal emulator being used. It's recommended to test your code in different environments to ensure the desired effects are achieved.
-
-Additionally, escape sequences are specific to the terminal or console being used and may not work in other contexts like text editors or web browsers.
-
 ## Additional Notes
 
 - Escape sequences are based on the ANSI escape codes, which are a standardized set of sequences used for formatting text in terminals and consoles. These codes provide a consistent way to apply colors and other formatting options across different platforms and terminals.
 
-- Some programming languages or frameworks provide higher-level abstractions for using escape sequences and colors. These abstractions often provide convenience functions or libraries that make it easier to apply colors and formatting to text output. It's recommended to check the documentation of your specific programming language or framework to see if such abstractions are available.
+- Standard escape codes can have different representations:
 
-- When using escape sequences, it's important to consider the readability and accessibility of your text. While colors can enhance the visual appearance, certain color combinations may be difficult to read, especially for visually impaired users. It's advisable to choose color combinations that ensure clear legibility and contrast.
+  - Decimal: The decimal representation of the escape code is 27.
+  - Octal: The octal representation of the escape code is \033 or \o33, where 33 is the octal code.
+  - Hexadecimal: The hexadecimal representation of the escape code is \x1B or \x1b, where 1B is the hexadecimal code.
+  - C-escape: The C-escape representation of the escape code is \e or \E.
+  - Ctrl-Key: The Ctrl-Key representation of the escape code is ^[, where ^ represents the Ctrl key and [ is the literal opening square bracket.
+
+- Escape sequences can be followed by a command, sometimes delimited by an opening square bracket `[`. This is known as a Control Sequence Introducer (CSI). The CSI can be followed by arguments, separated by semicolons (`;`), and the command itself.
+
+- Escape sequences can include the "?" character as part of the command. The "?" is used to introduce private or non-standard commands that are specific to certain terminals or consoles.
+
+- It's important to note that not all escape sequences and commands are universally supported across all terminals or consoles. Some terminals may have limited support or may interpret certain commands differently. It's recommended to refer to the documentation or specifications of the specific terminal or console you're working with to ensure compatibility and desired behavior.
+
+- When using escape sequences, it's important to consider the readability and accessibility of your text. While colors and formatting can enhance the visual appearance, certain combinations or excessive use of effects may hinder readability, especially for visually impaired users. It's advisable to choose color combinations and formatting options that ensure clear legibility and appropriate contrast.
 
 - Escape sequences are not limited to just colors. They can also be used to apply other formatting options such as bold text, underlined text, or blinking text. The specific escape sequences for these formatting options may vary depending on the terminal or console being used.
 
-- It's worth noting that some modern terminals or consoles support more advanced features like true color support, which allows for a wider range of colors. In such cases, different escape sequences or additional configuration may be required. Refer to the documentation of your specific terminal or console for more details.
-
-- Finally, it's important to test your code in different environments and terminals to ensure consistent behavior and compatibility. Different platforms and terminal emulators may have varying levels of support for escape sequences and color rendering.
+- Some programming languages or frameworks provide higher-level abstractions or libraries for working with escape sequences and applying colors or formatting. These abstractions often simplify the usage and provide convenient functions or methods for applying colors and formatting to text output. It's recommended to check the documentation of your specific programming language or framework to see if such abstractions are available.
